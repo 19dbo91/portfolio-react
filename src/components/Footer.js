@@ -4,8 +4,41 @@
             GitHub and 
             LinkedIn profiles, 
             and their profile on a third platform (Stack Overflow, Twitter)
-*/
 
-const GitHub = 'https://github.com/19dbo91';
-const LinkedIn = 'https://www.linkedin.com/in/dustin-bonilla-503110172/';
-const AnotherLink = '';
+    * A single `Footer` component that appears on multiple pages
+*/
+import React from 'react';
+
+const GitHub = {
+    href: 'https://github.com/19dbo91',
+    icon: '',
+    alt: 'Link to Git Hub profile of Dustin Bonilla',
+}
+const LinkedIn = {
+    href: 'https://www.linkedin.com/in/dustin-bonilla-503110172/',
+    icon: '',
+    alt: 'Link to Linked In profile of Dustin Bonilla',
+}
+const AnotherLink = {
+    href:'',
+    icon:'',
+    alt:'',
+};
+
+const links = ([GitHub, LinkedIn, AnotherLink]) =>{
+    return 
+}
+
+const styles = {}
+
+const Footer = () =>{
+    return (
+        <div>
+           {/* <Icon link=/>  */}
+            {/* <Icon link=/>  */}
+            {/* <Icon link=/>  */} 
+        </div>
+    );
+};
+
+export default Footer;

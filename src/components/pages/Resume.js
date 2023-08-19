@@ -4,6 +4,17 @@
             a list of the developer’s proficiencies
 */
 
+import React from 'react';
 
-//Resume
-//Downloadable link
+const styles = {}
+
+const Resume =() =>{
+    return (
+        <div>
+            {/* <a href="resume.pdf">  */}
+            {/* <p></p>  */}
+        </div>
+    );
+};
+
+export default Resume;
