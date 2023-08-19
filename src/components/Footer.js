@@ -29,12 +29,12 @@ const links = ([GitHub, LinkedIn, AnotherLink]) =>{
     return 
 }
 
-const styles = {}
+const styles = {};
 
 const Footer = () =>{
     return (
         <div>
-           {/* <Icon link=/>  */}
+            {/* <Icon link=/>  */}
             {/* <Icon link=/>  */}
             {/* <Icon link=/>  */} 
         </div>

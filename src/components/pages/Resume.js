@@ -6,13 +6,15 @@
 
 import React from 'react';
 
-const styles = {}
+const styles = {};
 
 const Resume =() =>{
     return (
         <div>
-            {/* <a href="resume.pdf">  */}
-            {/* <p></p>  */}
+            <h2>Resume</h2>
+            <hr />
+            <a href="resume.pdf"> Download resume </a>
+            <p></p>
         </div>
     );
 };

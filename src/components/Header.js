@@ -10,15 +10,15 @@ import Navigation from './Navigation';
 
 const name = "Dustin Bonilla";
 
-const styles = {}
+const styles = {};
 
 // <Navigation />
 
 const Header =() =>{
     return (
         <div>
-        {/* <Name />  */}
-        {/* <Navigation /> */}
+            <h1>{name}</h1>
+            <Navigation />
         </div>
     );
 };

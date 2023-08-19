@@ -21,6 +21,7 @@ const styles = {};
 const Contact =() => {
     return (
         <div>
+            <h2>Contact</h2>
             <form className='form'>
                 <label for="name">Name: </label>
                 <input type="text" name="name"/>

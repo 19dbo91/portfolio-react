@@ -9,17 +9,13 @@ const project = {
     description:'',
 }
 
-const projects =[
+//on mouse hover:
+// overlay show name and description in box
 
-]
 
 const Project =() =>{
     return (
-        <div>
-            {/* <Icon link=/>  */}
-            {/* <Icon link=/>  */}
-            {/* <Icon link=/>  */}
-        </div>
+        <></>
     );
 };
 

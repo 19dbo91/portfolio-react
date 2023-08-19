@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-const styles = {}
+const styles = {};
 
 const photo = {
     src: '',
@@ -22,8 +22,10 @@ const my = {
 
 const About =() => {
     return (
-        <div>
+        <div className="">
             <img src={my.photo} alt={my.altToPhoto}/>
+            <h2>About Me</h2>
+            <hr />
             <p>{my.bio}</p>
         </div>
     );

@@ -7,19 +7,21 @@
 */
 import React from 'react';
 
-const styles = {}
+const styles = {};
 
-const projects = [{},{}]
+const projects = [{},{}];
 
 const Portfolio =() =>{
     return (
         <div>
-            <Project prop1={} prop2={}/>
-            <Project prop1={} prop2={}/>
-            <Project prop1={} prop2={}/>
-            <Project prop1={} prop2={}/>
-            <Project prop1={} prop2={}/>
-            <Project prop1={} prop2={}/>
+            <h2>Portfolio</h2>
+            <hr />
+            <Project prop1={something} prop2={something}/>
+            <Project prop1={something} prop2={something}/>
+            <Project prop1={something} prop2={something}/>
+            <Project prop1={something} prop2={something}/>
+            <Project prop1={something} prop2={something}/>
+            <Project prop1={something} prop2={something}/>
         </div>
     );
 };
