@@ -13,14 +13,14 @@
     * Ensure this happens by using the `gh-pages` branch to host the deployed application's build.
 */
 import React from 'react';
-import Header from 'Header';
+import Header from './Header';
 import CurrentPage from './pages/CurrentPage';
-import Footer from 'Footer';
+import Footer from './Footer';
 
 
 const styles = {};
 
-const PortfolioContainer =() =>{
+function PortfolioContainer() {
     return (
         <div>
             <Header />

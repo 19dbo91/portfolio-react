@@ -20,7 +20,7 @@ const getTitles= () => {};
 const Navigation =() =>{
     return (
         <div>
-            {/* <Name />  */}
+            {/* <Titles />  */}
         </div>
     );
 }
