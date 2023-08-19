@@ -14,20 +14,17 @@
 */
 import React from 'react';
 import Header from 'Header';
+import CurrentPage from './pages/CurrentPage';
 import Footer from 'Footer';
 
 
 const styles = {};
 
-const []
-
-
-
 const PortfolioContainer =() =>{
     return (
         <div>
             <Header />
-            <Section />
+            <CurrentPage />
             <Footer />
         </div>
     );
