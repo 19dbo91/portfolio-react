@@ -23,6 +23,7 @@ const my = {
 const About = () => {
     return (
         <div className="">
+            <hr />
             <h2>About Me</h2>
             <img src={my.photo} alt={my.altToPhoto}/>
             <hr />

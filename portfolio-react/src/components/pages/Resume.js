@@ -11,8 +11,9 @@ const styles = {};
 const Resume =() =>{
     return (
         <div>
-            <h2>Resume</h2>
             <hr />
+            <h2>Resume</h2>
+            
             <a href="resume.pdf"> Download resume </a>
             <p>This is where my resume starts</p>
         </div>

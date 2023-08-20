@@ -2,7 +2,7 @@
     WHEN I view the header
         THEN I am presented with the developer's name and navigation with titles 
             corresponding to different sections of the portfolio
-
+       
     * A single `Header` component that appears on multiple pages
 */
 import React from 'react';
@@ -12,13 +12,11 @@ const name = "Dustin Bonilla";
 
 const styles = {};
 
-// <Navigation />
-
-const Header =() =>{
+const Header =( { handlePageChange } ) =>{
     return (
         <div>
             <h1>{name}</h1>
-            <Navigation />
+            <Navigation handlePageChange={handlePageChange}/>
         </div>
     );
 };

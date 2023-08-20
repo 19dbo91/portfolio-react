@@ -14,15 +14,41 @@ const projects = [
     {
         name: "Project 1",
         description: "This is project one",
+        link:'',
+        repo:'',
+    },{
+        name: "Project 2",
+        description: "This is project one",
+        link:'',
+        repo:'',
+    },{
+        name: "Project 3",
+        description: "This is project one",
+        link:'',
+        repo:'',
+    },{
+        name: "Project 4",
+        description: "This is project one",
+        link:'',
+        repo:'',
+    },{
+        name: "Project 5",
+        description: "This is project one",
+        link:'',
+        repo:'',
+    },{
+        name: "Project 6",
+        description: "This is project one",
+        link:'',
+        repo:'',
     },
-    {}
 ];
 
 const Portfolio =() =>{
     return (
         <div>
-            <h2>Portfolio</h2>
             <hr />
+            <h2>Portfolio</h2>
             <Project name={projects[0].name} description={projects[0].description} />
             <Project name={projects[1].name} description={projects[1].description} />
             <Project name={projects[2].name} description={projects[2].description} />

@@ -21,6 +21,7 @@ const styles = {};
 const Contact =() => {
     return (
         <div>
+            <hr />
             <h2>Contact</h2>
             <form className='form'>
                 <label for="name">Name: </label>
