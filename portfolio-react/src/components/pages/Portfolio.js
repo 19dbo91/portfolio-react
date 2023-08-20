@@ -5,23 +5,30 @@
 
     * A single `Project` component that will be used multiple times in the Portfolio section
 */
-import React from 'react';
+import React, { useState }  from 'react';
+import Project from './Project';
 
 const styles = {};
 
-const projects = [{},{}];
+const projects = [
+    {
+        name: "Project 1",
+        description: "This is project one",
+    },
+    {}
+];
 
 const Portfolio =() =>{
     return (
         <div>
             <h2>Portfolio</h2>
             <hr />
-            <Project prop1={something} prop2={something}/>
-            <Project prop1={something} prop2={something}/>
-            <Project prop1={something} prop2={something}/>
-            <Project prop1={something} prop2={something}/>
-            <Project prop1={something} prop2={something}/>
-            <Project prop1={something} prop2={something}/>
+            <Project name={projects[0].name} description={projects[0].description} />
+            <Project name={projects[1].name} description={projects[1].description} />
+            <Project name={projects[2].name} description={projects[2].description} />
+            <Project name={projects[3].name} description={projects[3].description} />
+            <Project name={projects[4].name} description={projects[4].description} />
+            <Project name={projects[5].name} description={projects[5].description} />
         </div>
     );
 };

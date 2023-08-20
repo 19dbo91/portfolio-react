@@ -15,12 +15,15 @@ import React from 'react';
 
 const styles = {};
 
-const getTitles= () => {};
 
-const Navigation =() =>{
+
+const Navigation =() => {
     return (
         <div>
-            {/* <Titles />  */}
+            <a href="#about" onClick = {()=> handlePage() }>About</a>
+            <a href="#portfolio" onClick = {()=> handlePage() }>Portfolio</a>
+            <a href="#contact" onClick = {()=> handlePage() }>Contact</a>
+            <a href="#resume" onClick = {()=> handlePage() }>Resume</a>
         </div>
     );
 }

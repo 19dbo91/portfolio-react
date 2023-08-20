@@ -14,7 +14,7 @@ const Resume =() =>{
             <h2>Resume</h2>
             <hr />
             <a href="resume.pdf"> Download resume </a>
-            <p></p>
+            <p>This is where my resume starts</p>
         </div>
     );
 };

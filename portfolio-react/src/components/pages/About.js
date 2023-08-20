@@ -5,7 +5,7 @@
 
 //pic
 
-import React from 'react';
+import React, { useState }  from 'react';
 
 const styles = {};
 
@@ -20,11 +20,11 @@ const my = {
     bio: 'This is a blurb about me',
 };
 
-const About =() => {
+const About = () => {
     return (
         <div className="">
-            <img src={my.photo} alt={my.altToPhoto}/>
             <h2>About Me</h2>
+            <img src={my.photo} alt={my.altToPhoto}/>
             <hr />
             <p>{my.bio}</p>
         </div>
