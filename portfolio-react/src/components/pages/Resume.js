@@ -6,13 +6,15 @@
 
 import React from 'react';
 
-const styles = {};
+const styles = {
+    animation:"animate__animated animate__fadeIn",
+    heading:"text-2xl"
+};
 
 const Resume =() =>{
     return (
-        <div>
-            <hr />
-            <h2>Resume</h2>
+        <div class={styles.animation}>
+            <h2 class={styles.heading}>Resume</h2>
             
             <a href="resume.pdf"> Download resume </a>
             <p>This is where my resume starts</p>

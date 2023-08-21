@@ -7,7 +7,11 @@
 
 import React, { useState }  from 'react';
 
-const styles = {};
+const styles = {
+    animation:"animate__animated animate__fadeIn",
+    heading:"text-2xl bg-[#EFF1F3] text-[#223843]"
+    
+};
 
 const photo = {
     src: '',
@@ -17,16 +21,14 @@ const photo = {
 const my = {
     photo: '',
     altToPhoto: 'This is a photo of Dustin Bonilla',
-    bio: 'This is a blurb about me',
+    bio: 'My name is Dustin and ',
 };
 
 const About = () => {
     return (
-        <div className="">
-            <hr />
-            <h2>About Me</h2>
+        <div class={styles.animation}>
+            <h2 class={styles.heading}>About Me</h2>
             <img src={my.photo} alt={my.altToPhoto}/>
-            <hr />
             <p>{my.bio}</p>
         </div>
     );

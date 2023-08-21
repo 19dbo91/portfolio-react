@@ -21,7 +21,10 @@ import Resume from "./pages/Resume";
 import Footer from './Footer';
 
 
-const styles = {};
+const styles = {
+    page: "grid grid-col-6",
+    pageContent:"col-start-1"
+};
 
 
 
@@ -43,12 +46,13 @@ const PortfolioContainer = () => {
     };
 
     return (
-        <div>
-            <Header handlePageChange={handlePageChange}/>
-            <p> Begin Page</p>
-            {renderPage(pageContent)}
-            <p> End Page</p>
-            <Footer />
+        <div class={styles.page}>
+            <div class={styles.pageContent}>
+                <Header handlePageChange={handlePageChange}/>
+                {renderPage(pageContent)}
+                <Footer />
+            </div>
+            <div></div>
         </div>
     );
 };

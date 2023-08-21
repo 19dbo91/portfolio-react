@@ -16,13 +16,15 @@
 */
 import React, { useState }  from 'react';
 
-const styles = {};
+const styles = {
+    animation:"animate__animated animate__fadeIn",
+    heading:"text-2xl",
+};
 
 const Contact =() => {
     return (
-        <div>
-            <hr />
-            <h2>Contact</h2>
+        <div class={styles.animation}>
+            <h2 class={styles.heading}>Contact</h2>
             <form className='form'>
                 <label for="name">Name: </label>
                 <input type="text" name="name"/>
@@ -31,7 +33,8 @@ const Contact =() => {
                 <input type="text"name="email"/>
 
                 <label for="message">Message: </label>
-                <input type="text" name="message"/>
+                <textarea type="text" name="message"/>
+                
                 <input type='submit' value="submit"/>
             </form>
         </div>

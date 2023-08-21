@@ -10,12 +10,14 @@ import Navigation from './Navigation';
 
 const name = "Dustin Bonilla";
 
-const styles = {};
+const styles = {
+    h1:'px-5 pt-5 text-5xl text-[#00A6FB] bg-[#223843]',
+};
 
 const Header =( { handlePageChange } ) =>{
     return (
         <div>
-            <h1>{name}</h1>
+            <h1 class={styles.h1}>{name}</h1>
             <Navigation handlePageChange={handlePageChange}/>
         </div>
     );
