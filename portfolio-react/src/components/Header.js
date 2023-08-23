@@ -10,15 +10,22 @@ import Navigation from './Navigation';
 
 const name = "Dustin Bonilla";
 
-const styles = {
-    h1:'px-5 pt-5 text-5xl text-[#00A6FB] bg-[#223843]',
+const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
+    main: "#223843",        //60%
+    secondary: "#EFF1F3",   //30%
+    accent: "#00A6FB"       //10%
 };
 
-const Header =( { handlePageChange } ) =>{
+
+const styles = {
+    h1:`px-5 pt-5 text-5xl font-bold text-[${themeColor.accent}] bg-[${themeColor.main}]`,
+};
+
+const Header =( { pageContent, handlePageChange } ) =>{
     return (
         <div>
             <h1 class={styles.h1}>{name}</h1>
-            <Navigation handlePageChange={handlePageChange}/>
+            <Navigation pageContent={pageContent} handlePageChange={handlePageChange}/>
         </div>
     );
 };

@@ -8,35 +8,51 @@
     * A single `Footer` component that appears on multiple pages
 */
 import React from 'react';
+import Socials from './Socials';
 
-const GitHub = {
-    href: 'https://github.com/19dbo91',
-    icon: '',
-    alt: 'Link to Git Hub profile of Dustin Bonilla',
-}
-const LinkedIn = {
-    href: 'https://www.linkedin.com/in/dustin-bonilla-503110172/',
-    icon: '',
-    alt: 'Link to Linked In profile of Dustin Bonilla',
-}
-const AnotherLink = {
-    href:'',
-    icon:'',
-    alt:'',
+const socials = [
+    {
+        title: 'GitHub',
+        link: 'https://github.com/19dbo91',
+        icon: '/img/github-mark/github-mark-white.png',
+    },
+    {
+        title: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/dustin-bonilla-503110172/',
+        icon: '',
+    },
+    {
+        title: '',
+        link: '',
+        icon: '',
+    }
+];
+
+const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
+    main: "#223843",        //60%
+    secondary: "#EFF1F3",   //30%
+    accent: "#00A6FB"       //10%
 };
 
-const links = ([GitHub, LinkedIn, AnotherLink]) =>{
-    return 
-}
-
-const styles = {};
+const styles = {
+    footer: `m-5 bg-[${themeColor.main}]`
+};
 
 const Footer = () =>{
     return (
-        <div>
-            {/* <Icon link=/>  */}
-            {/* <Icon link=/>  */}
-            {/* <Icon link=/>  */} 
+        <div class={styles.footer} >
+            <Socials
+                title={socials[0].title}
+                link={socials[0].link}
+                icon={socials[0].icon} />
+            <Socials
+                title={socials[1].title}
+                link={socials[1].link}
+                icon={socials[1].icon} />
+            <Socials
+                title={socials[2].title}
+                link={socials[2].link}
+                icon={socials[2].icon} />
         </div>
     );
 };

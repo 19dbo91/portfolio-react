@@ -3,15 +3,17 @@
 */
 import React, { useState }  from 'react';
 
+const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
+    main: "#223843",        //60%
+    secondary: "#EFF1F3",   //30%
+    accent: "#00A6FB"       //10%
+};
+
 const styles = {
-    project: "grid-span-2",
+    project: `p-8 col-span-4 border-5 bg-[${themeColor.secondary}] border-[${themeColor.secondary}] rounded-lg text-[${themeColor.main}]`,
 }
 
-
-const onMouseHover = () => {
-    // overlay show name and description in box
-}
-
+// overlay show name and description in box
 //link will be in overlay, make sure to address bubbling for event
 
 const Project = ({name, description, link, repo}) =>{

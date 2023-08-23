@@ -18,39 +18,58 @@
 import React, { useState } from 'react';
 //import Header from './Header';
 
-const styles = { //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
-    list: "pt-2 grid grid-cols-12 bg-[#00A6FB] border-[#223843]",
-    listStartItem: "col-start-2 text-[#223843] text-center  border-2 border-[#00A6FB] rounded-t-lg hover:border-[#223843] active:bg-[#223843] active:text-[#EFF1F3] hover:transition-all",
-    listItem: "text-[#223843] text-center border-2 border-[#00A6FB] rounded-t-lg hover:border-[#223843] active:bg-[#223843] active:text-[#EFF1F3] hover:transition-all",
+const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
+    main: "#223843",        //60%
+    secondary: "#EFF1F3",   //30%
+    accent: "#00A6FB"       //10%
 };
 
-const Navigation = ( {handlePageChange} ) => {
+
+const styles = { 
+    list: `pl-5 pt-2 grid grid-cols-12 bg-[${themeColor.accent}] border-[${themeColor.main}]`,
+    listActiveItem: `text-[${themeColor.secondary}] font-bold text-center content-center bg-[${themeColor.main}] rounded-t-lg hover:transition-all`,
+    listItem: `text-[${themeColor.main}] text-center border-2 border-[${themeColor.accent}] rounded-t-lg hover:border-[${themeColor.main}] active:bg-[${themeColor.main}] active:text-[${themeColor.secondary}] hover:transition-all`,
+};
+
+const Navigation = ( {pageContent, handlePageChange} ) => {
     return (
         <div>
             <ul class={styles.list}>
                 <a href="#about"
-                    class={styles.listStartItem}
+                    class={ pageContent ==='About'
+                        ? (styles.listActiveItem)
+                        : (styles.listItem)
+                    }
                     onClick={() => handlePageChange('About') } >
                         <li>
                             About
                         </li>
                 </a>
                 <a href="#portfolio"
-                    class={styles.listItem}
+                    class={ pageContent ==='Portfolio'
+                        ? (styles.listActiveItem)
+                        : (styles.listItem)
+                    }
                     onClick={() => handlePageChange('Portfolio') } >
                         <li>
                             Portfolio
                         </li>
                 </a>
                 <a href="#contact"
-                    class={styles.listItem}
+                    class={ pageContent ==='Contact'
+                        ? (styles.listActiveItem)
+                        : (styles.listItem)
+                    }
                     onClick={() => handlePageChange('Contact') } >
                         <li>
                             Contact
                         </li>
                 </a>
                 <a href="#resume"
-                    class={styles.listItem}
+                    class={ pageContent ==='Resume'
+                        ? (styles.listActiveItem)
+                        : (styles.listItem)
+                    }
                     onClick={() => handlePageChange('Resume') } >
                         <li>
                             Resume

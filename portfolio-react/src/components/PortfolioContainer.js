@@ -22,8 +22,8 @@ import Footer from './Footer';
 
 
 const styles = {
-    page: "grid grid-col-6",
-    pageContent:"col-start-1"
+    page: "grid grid-col-6 bg-[#223843]",
+    pageContent:"col-start-1",
 };
 
 
@@ -48,11 +48,12 @@ const PortfolioContainer = () => {
     return (
         <div class={styles.page}>
             <div class={styles.pageContent}>
-                <Header handlePageChange={handlePageChange}/>
-                {renderPage(pageContent)}
+                <Header pageContent={pageContent} handlePageChange={handlePageChange}/>
+                <div>
+                    {renderPage(pageContent)}
+                </div>
+                </div>
                 <Footer />
-            </div>
-            <div></div>
         </div>
     );
 };

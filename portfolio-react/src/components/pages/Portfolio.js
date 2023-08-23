@@ -5,13 +5,20 @@
 
     * A single `Project` component that will be used multiple times in the Portfolio section
 */
-import React, { useState }  from 'react';
+import React  from 'react';
 import Project from './Project';
+
+const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
+    main: "#223843",        //60%
+    secondary: "#EFF1F3",   //30%
+    accent: "#00A6FB"       //10%
+};
+
 
 const styles = {
     animation:"animate__animated animate__fadeIn",
-    heading:"text-2xl",
-    portfolio: "grid grid-cols-12",
+    heading:`m-2 text-center text-2xl text-[#${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
+    portfolio: "mx-5 grid grid-cols-12 gap-2",
 };
 
 const projects = [
@@ -48,19 +55,11 @@ const projects = [
     },
 ];
 
-
-const showcase = ()=>{
-    projects.map = (project) =>{
-        <Project name={project.name} description={project.description} link={project.link} repo={project.repo}/>
-    }
-}
-
 const Portfolio =() =>{
     return (
         <div class={styles.animation}>
             <h2 class={styles.heading}>Portfolio</h2>
             <div class={styles.portfolio}>
-                {showcase()}
                 <Project
                     name={projects[0].name}
                     description={projects[0].description}
@@ -73,7 +72,30 @@ const Portfolio =() =>{
                     link={projects[1].link}
                     repo={projects[1].repo}
                 />
-            
+                <Project
+                    name={projects[2].name}
+                    description={projects[2].description}
+                    link={projects[2].link}
+                    repo={projects[2].repo}
+                />
+                <Project
+                    name={projects[3].name}
+                    description={projects[3].description}
+                    link={projects[3].link}
+                    repo={projects[3].repo}
+                />
+                                <Project
+                    name={projects[4].name}
+                    description={projects[4].description}
+                    link={projects[4].link}
+                    repo={projects[4].repo}
+                />
+                                <Project
+                    name={projects[5].name}
+                    description={projects[5].description}
+                    link={projects[5].link}
+                    repo={projects[5].repo}
+                />
             </div>
         </div>
     );
