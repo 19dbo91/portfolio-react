@@ -27,11 +27,8 @@ const styles = {
 };
 
 
-
 const PortfolioContainer = () => {
-
     const [pageContent, setPageContent] = useState('');
-
     const handlePageChange = (page) => setPageContent(page);
 
     const renderPage = (page) => {

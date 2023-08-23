@@ -1,13 +1,8 @@
 /*
     * A single `Project` component that will be used multiple times in the Portfolio section
 */
-import React, { useState }  from 'react';
-
-const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
-    main: "#223843",        //60%
-    secondary: "#EFF1F3",   //30%
-    accent: "#00A6FB"       //10%
-};
+import React from 'react';
+import themeColor from '../../styles/themeColor'
 
 const styles = {
     project: `p-8 col-span-4 border-5 bg-[${themeColor.secondary}] border-[${themeColor.secondary}] rounded-lg text-[${themeColor.main}]`,

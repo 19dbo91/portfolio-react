@@ -16,14 +16,7 @@
 */
 
 import React, { useState } from 'react';
-//import Header from './Header';
-
-const themeColor = {        //https://coolors.co/223843-eff1f3-dbd3d8-00a6fb-4a051c
-    main: "#223843",        //60%
-    secondary: "#EFF1F3",   //30%
-    accent: "#00A6FB"       //10%
-};
-
+import themeColor from '../styles/themeColor'
 
 const styles = { 
     list: `pl-5 pt-2 grid grid-cols-12 bg-[${themeColor.accent}] border-[${themeColor.main}]`,
