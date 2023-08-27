@@ -18,25 +18,29 @@ import React from 'react';
 import themeColor from '../../styles/themeColor'
 
 const styles = {
-    animation:"animate__animated animate__fadeIn",
+    animation:"animate__animated animate__fadeIn m-5 rounded-full",
     heading: `m-2 text-center text-2xl text-[${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
+    form: `rounded-md bg-[${themeColor.secondary}] p-5 mx-12 my-12 grid grid-cols-1`,
+    inputText:`mb-2`,
+    inputButton: `rounded-full mx-0 p-1 bg-[${themeColor.accent}] font-semibold text-[${themeColor.main}] hover:text-[${themeColor.secondary}]`,
+
 };
 
 const Contact =() => {
     return (
         <div class={styles.animation}>
             <h2 class={styles.heading}>Contact</h2>
-            <form className='form'>
+            <form class={styles.form}>
                 <label for="name">Name: </label>
-                <input type="text" name="name"/>
+                <input class={styles.inputText} type="text" name="name"/>
 
                 <label for="email">Email: </label>
-                <input type="text"name="email"/>
+                <input class={styles.inputText}type="text"name="email"/>
 
                 <label for="message">Message: </label>
-                <textarea type="text" name="message"/>
+                <textarea class={styles.inputText} type="text" name="message"/>
                 
-                <input type='submit' value="submit"/>
+                <input class={styles.inputButton} type='submit' value="Submit"/>
             </form>
         </div>
     );

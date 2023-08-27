@@ -13,41 +13,42 @@ import themeColor from '../styles/themeColor'
 
 const socials = [
     {
-        title: 'GitHub',
         link: 'https://github.com/19dbo91',
-        icon: '/img/github-mark/github-mark-white.png',
-    },
-    {
-        title: 'LinkedIn',
+        icon: '/img/github/iconBlack.png',
+        alt: 'GitHub',
+    },{
         link: 'https://www.linkedin.com/in/dustin-bonilla-503110172/',
-        icon: '',
-    },
-    {
-        title: '',
+        icon: '/img/linkedin/iconBlue.png',
+        alt: 'LinkedIn',
+    },{
         link: '',
         icon: '',
+        alt: '',
     }
 ];
 
 const styles = {
-    footer: `m-5 bg-[${themeColor.main}]`
+    footer: `m-5 bg-[${themeColor.main}] flex justify-center`,
 };
 
 const Footer = () =>{
     return (
         <div class={styles.footer} >
             <Socials
-                title={socials[0].title}
                 link={socials[0].link}
-                icon={socials[0].icon} />
+                icon={socials[0].icon}
+                alt={socials[0].alt}
+            />
             <Socials
-                title={socials[1].title}
                 link={socials[1].link}
-                icon={socials[1].icon} />
+                icon={socials[1].icon}
+                alt={socials[1].alt}
+            />
             <Socials
-                title={socials[2].title}
                 link={socials[2].link}
-                icon={socials[2].icon} />
+                icon={socials[2].icon}
+                alt={socials[2].alt}
+            />
         </div>
     );
 };

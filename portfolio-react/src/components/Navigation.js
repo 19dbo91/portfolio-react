@@ -15,7 +15,7 @@
         to conditionally render the different sections of your portfolio
 */
 
-import React, { useState } from 'react';
+import React from 'react';
 import themeColor from '../styles/themeColor'
 
 const styles = { 

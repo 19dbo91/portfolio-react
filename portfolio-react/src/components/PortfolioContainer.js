@@ -19,10 +19,11 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Footer from './Footer';
+import themeColor from '../styles/themeColor'
 
 
 const styles = {
-    page: "grid grid-col-6 bg-[#223843]",
+    page: `grid grid-col-6 bg-[${themeColor.main}]`,
     pageContent:"col-start-1",
 };
 
@@ -45,12 +46,15 @@ const PortfolioContainer = () => {
     return (
         <div class={styles.page}>
             <div class={styles.pageContent}>
-                <Header pageContent={pageContent} handlePageChange={handlePageChange}/>
+                <Header 
+                    pageContent={pageContent}
+                    handlePageChange={handlePageChange}
+                />
                 <div>
                     {renderPage(pageContent)}
                 </div>
-                </div>
                 <Footer />
+            </div>
         </div>
     );
 };

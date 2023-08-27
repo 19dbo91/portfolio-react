@@ -3,25 +3,23 @@
         THEN I see a recent photo or avatar of the developer and a short bio about them
 */
 
-//pic
-
 import React from 'react';
 import themeColor from '../../styles/themeColor'
 
-const avatarSize = 24;
+const size = 220;
 
 const styles = {
     animation:"animate__animated animate__fadeIn",
     heading: `m-2 text-center text-2xl text-[${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
-    pageBody: `text-[${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
-    avatar: ` text-[${themeColor.main}] text-center h-${avatarSize} w-${avatarSize} bg-[${themeColor.secondary}] rounded-full`,
-    avatarContainer: "justify-center"
-    
+    body: `p-10 m-5 rounded-md text-[${themeColor.main}] bg-[${themeColor.secondary}]`,
+    bodyContainer: `flex justify-center rounded`,
+    avatar: `m-10 p-1 text-[${themeColor.main}] text-center bg-[${themeColor.secondary}] rounded-full`,
+    avatarContainer: "flex justify-center"
 };
 
 const my = {
-    photo: '',
-    altToPhoto: 'This is a photo of Dustin Bonilla',
+    photo: "/img/headshot.png",
+    alt: 'This is a photo of Dustin Bonilla',
     bio: "Welcome to my website! I am Dustin Bonilla. I am an aspiring web developer eager to {value statemnt}, here",
 };
 
@@ -30,9 +28,17 @@ const About = () => {
         <div class={styles.animation}>
             <h2 class={styles.heading}>About Me</h2>
             <div class={styles.avatarContainer}>
-                <img class={styles.avatar} src={my.photo} alt={my.altToPhoto}/>
+                <img 
+                    class={styles.avatar}
+                    src={my.photo}
+                    alt={my.alt}
+                    width={size}
+                    height={size}
+                />
             </div>
-            <p class={styles.pageBody}>{my.bio}</p>
+            <div class={styles.bodyContainer}>
+                <p class={styles.body}>{my.bio}</p>
+            </div>
         </div>
     );
 };
