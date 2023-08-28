@@ -19,9 +19,9 @@ import themeColor from '../../styles/themeColor'
 import validateEmail from '../../util/helpers'
 
 const styles = {
-    animation:"animate__animated animate__fadeIn m-5 rounded-full",
-    heading: `m-2 text-center text-2xl text-[${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
-    form: `rounded-lg bg-[${themeColor.secondary}] p-5 mx-12 my-12 grid grid-cols-1`,
+    animation:"animate__animated animate__fadeIn",
+    heading: `mt-3 mx-40 p-4  text-center text-3xl text-[${themeColor.main}] font-bold bg-[${themeColor.secondary}] rounded-lg`,
+    form: `rounded-lg bg-[${themeColor.secondary}] p-5 mx-12 my-8 grid grid-cols-1`,
     inputText:`mb-2`,
     inputButton: `rounded-full mx-0 p-1 bg-[${themeColor.accent}] font-semibold text-[${themeColor.main}] hover:text-[${themeColor.secondary}]`,
     error: `text-[${themeColor.error}]`

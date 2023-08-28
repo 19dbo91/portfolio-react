@@ -9,7 +9,7 @@ import themeColor from '../../styles/themeColor'
 
 const styles = {
     animation:`animate__animated animate__fadeIn `,
-    heading: `m-2 text-center text-2xl text-[${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
+    heading: `mt-3 mx-40 p-4  text-center text-3xl text-[${themeColor.main}] font-bold bg-[${themeColor.secondary}] rounded-lg`,
     body: `p-10 m-5 rounded-md text-[${themeColor.main}] bg-[${themeColor.secondary}]`,
     link: `font-semibold text-[${themeColor.main}] hover:text-[${themeColor.accent}]`
 };

@@ -23,7 +23,7 @@ import themeColor from '../styles/themeColor'
 
 
 const styles = {
-    page: `grid grid-col-6 bg-[${themeColor.main}]`,
+    page: `grid grid-col-6 bg-[${themeColor.main}] `,
     pageContent:"col-start-1",
 };
 

@@ -11,8 +11,8 @@ import themeColor from '../../styles/themeColor'
 
 const styles = {
     animation:"animate__animated animate__fadeIn",
-    heading:`m-2 text-center text-2xl text-[#${themeColor.main}] bg-[${themeColor.secondary}] rounded-lg`,
-    portfolio: "mx-5 grid grid-cols-12 gap-2",
+    heading: `mt-3 mx-40 p-4  text-center text-3xl text-[${themeColor.main}] font-bold bg-[${themeColor.secondary}] rounded-lg`,
+    portfolio: "p-5 mx-12 my-8 grid grid-cols-12 gap-2",
 };
 
 const projects = [
