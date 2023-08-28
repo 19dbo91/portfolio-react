@@ -20,7 +20,7 @@ const styles = {
 const my = {
     photo: "/img/headshot.png",
     alt: 'This is a photo of Dustin Bonilla',
-    bio: "Welcome to my website! I am Dustin Bonilla. I am an aspiring web developer eager to {value statemnt}, here",
+    bio: "Welcome to my website! I am Dustin Bonilla. I am an aspiring web developer eager to create unique experiences and deliver valuable utilities for everyone to use. ",
 };
 
 const About = () => {

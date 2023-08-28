@@ -14,16 +14,16 @@ import themeColor from '../styles/themeColor'
 const socials = [
     {
         link: 'https://github.com/19dbo91',
-        icon: '/img/github/iconBlack.png',
-        alt: 'GitHub',
+        icon: '/img/github/iconWhite.png',
+        alt: 'GitHub repository',
     },{
         link: 'https://www.linkedin.com/in/dustin-bonilla-503110172/',
-        icon: '/img/linkedin/iconBlue.png',
-        alt: 'LinkedIn',
+        icon: '/img/linkedin/iconWhite.png',
+        alt: 'LinkedIn profile',
     },{
-        link: '',
-        icon: '',
-        alt: '',
+        link: 'https://medium.com/@bonilla.dustin',
+        icon: '/img/medium/iconWhite.png',
+        alt: 'Medium blogsite',
     }
 ];
 
