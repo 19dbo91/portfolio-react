@@ -25,7 +25,7 @@ const projects = [
         alt:"Screenshot of homepage for Dad Gifs",
     },{
         name: "Weather Dashboard",
-        description: "Forecasts 5 days for a given city. \n #html #css #js #api",
+        description: "Forecasts 5 days for a given city. #html #css #js #api",
         link:'https://19dbo91.github.io/weather-dashboard/',
         repo:'https://github.com/19dbo91/weather-dashboard',
         img:"/img/weatherDashboard.png",
@@ -36,7 +36,7 @@ const projects = [
         description: " #heroku #mvc #sql #sequelize #handlebars",
         link:'https://polar-falls-15096-ec42d57531c1.herokuapp.com/',
         repo:'https://github.com/19dbo91/Task-Popper',
-        img:"",
+        img:"img/taskPopper.png",
         alt:"Screenshot of homepage for Task Popper",
     },{
         name: "Coding Quizlet",
@@ -46,11 +46,11 @@ const projects = [
         img:"/img/codingQuizlet.png",
         alt:"Screenshot of homepage for Coding Quizlet",
     },{
-        name: "Project 5",
-        description: " #",
-        link:"",
-        repo:"",
-        img:"",
+        name: "Daily Scheduler",
+        description: " #localStorage #html #css #js",
+        link:"https://19dbo91.github.io/daily-scheduler/",
+        repo:"https://github.com/19dbo91/daily-scheduler",
+        img:"img/scheduler.png",
         alt:"Screenshot of homepage for ",
     },{
         name: "My First Porfolio",
